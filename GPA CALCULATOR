@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+//Compiler version gcc  6.3.0
+
+int main()
+{
+  int N;
+  float A[N]; 
+  int i;
+  float b[N];
+  float g;
+  float Gpa = 0;
+  
+  printf("Enter number of subjects");
+  scanf("%d",&N);
+  
+  for(i=1;i<=N;i++){
+    printf("Enter your points at subject %d:\n",i);
+    scanf("%f",&A[i]);
+    printf("Enter subject hours:\n");
+    scanf("%d",&b[i]);
+    
+    g = (A[i] * b[i])/b[i];
+    
+   Gpa = Gpa + g;
+   
+  }
+  printf("Your GPA IS: %f",Gpa);
+  
+  return 0;
+}
+
+
+
+
+
